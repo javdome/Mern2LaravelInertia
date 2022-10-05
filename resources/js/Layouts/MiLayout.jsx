@@ -1,4 +1,4 @@
-import Navbar from "@/MisComponentes/Navbar";
+import Navbar from "@/Components/Navbar";
 
 function App({children}) {  
 

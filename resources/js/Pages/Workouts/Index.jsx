@@ -3,8 +3,8 @@ import React from 'react';
 import MiLayout from '@/Layouts/MiLayout';
 import { Head } from '@inertiajs/inertia-react';
 
-import WorkoutDetails from '@/MisComponentes/WorkoutDetails';
-import WorkoutForm from '@/MisComponentes/WorkoutForm';
+import WorkoutDetails from '@/Components/WorkoutDetails';
+import WorkoutForm from '@/Components/WorkoutForm';
 
 export default function Workouts (props) {
     return (

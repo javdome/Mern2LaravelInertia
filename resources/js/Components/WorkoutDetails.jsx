@@ -6,7 +6,9 @@ import { Inertia } from '@inertiajs/inertia'
 const WorkoutDetails = ({ workout }) => {
 
   const handleClick = () => {
-    Inertia.delete(route("workouts.destroy", workout.id));
+    Inertia.delete(route("workouts.destroy", workout.id),{
+      preserveScroll: true,
+    });
   }
 
   return (

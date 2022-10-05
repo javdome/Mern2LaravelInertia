@@ -11,7 +11,9 @@ const { data, setData, post, processing, errors } = useForm({
   
   function submit(e) {
     e.preventDefault()
-    post(route('workouts.store'))
+    post(route('workouts.store'), {
+      preserveScroll: true,
+    })
   }
 
   return (
