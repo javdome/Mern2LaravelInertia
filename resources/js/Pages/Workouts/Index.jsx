@@ -1,5 +1,6 @@
 import React from 'react';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+// import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import MiLayout from '@/Layouts/MiLayout';
 import { Head } from '@inertiajs/inertia-react';
 
 import WorkoutDetails from '@/MisComponentes/WorkoutDetails';
@@ -7,7 +8,7 @@ import WorkoutForm from '@/MisComponentes/WorkoutForm';
 
 export default function Workouts (props) {
     return (
-        <AuthenticatedLayout
+        <MiLayout
             auth={props.auth}
             errors={props.errors}
             header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>}
@@ -22,6 +23,6 @@ export default function Workouts (props) {
                 </div>
                 <WorkoutForm />
             </div>
-        </AuthenticatedLayout>
+        </MiLayout>
     );
 }

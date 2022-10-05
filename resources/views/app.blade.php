@@ -7,15 +7,17 @@
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
-
+        {{-- <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <!-- Scripts -->
         @routes
         @viteReactRefresh
         @vite('resources/js/app.jsx')
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
-        @inertia
+    <body class="">
+        <div id="root">
+            @inertia
+        </div>
     </body>
 </html>
